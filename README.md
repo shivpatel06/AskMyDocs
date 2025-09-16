@@ -1,6 +1,6 @@
-# RAG Chatbot with Document Processing
+# 📚 AskMyDocs
 
-A production-ready Retrieval-Augmented Generation (RAG) chatbot that allows users to upload documents, process them with OCR, and ask questions about their content using advanced AI.
+A production-ready document intelligence platform that allows users to upload documents, process them with OCR, and ask questions about their content using advanced AI. Transform any document into an interactive knowledge base.
 
 ## Features
 
@@ -17,7 +17,7 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot that allows user
 
 ```
 src/
-├── simple_app.py           # Main application entry point
+├── simple_app.py           # Main AskMyDocs application entry point
 ├── database.py             # Database management (PostgreSQL/SQLite)
 ├── document_processor.py   # Document upload, OCR, and vector processing
 ├── chat_history.py         # Chat message and document record management
@@ -40,7 +40,7 @@ src/
 ```bash
 # Clone and navigate to project
 git clone <your-repo-url>
-cd "RAG Chatbot Project"
+cd "AskMyDocs Project"
 
 # Create virtual environment
 python -m venv venv
@@ -72,7 +72,7 @@ ollama pull llama3
 ollama serve
 ```
 
-### 4. Run Application
+### 4. Run AskMyDocs
 
 ```bash
 python src/simple_app.py
@@ -110,9 +110,9 @@ COGNITO_APP_CLIENT_SECRET=your-client-secret
 ## Usage
 
 1. **Login**: Use any username for local development
-2. **Upload Documents**: Go to "Upload Documents" tab
-3. **Process Files**: Upload PDFs, images, or text files
-4. **Chat**: Ask questions about your uploaded documents
+2. **Upload Documents**: Go to "Upload Documents" tab to add your files
+3. **Process Files**: Upload PDFs, images, or text files to your knowledge base
+4. **Ask Questions**: Chat with your documents using natural language
 5. **History**: View past conversations in "Chat History" tab
 
 ## Production Deployment
